@@ -51,19 +51,15 @@ MonoBehaviour:
   onPrimaryInteract:
     m_PersistentCalls:
       m_Calls: []
-  onSecondaryInteract:
+  onPrimaryInteractLift:
     m_PersistentCalls:
       m_Calls: []
-  onPrimaryInteractLift:
+  onSecondaryInteract:
     m_PersistentCalls:
       m_Calls: []
   onSecondaryInteractLift:
     m_PersistentCalls:
       m_Calls: []
-  customTouchDistance: -1
-  customHoldDistance: -1
-  restrictSecondaryToHeldOnly: 0
-  heldText: 
   onHoverEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -71,21 +67,40 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hoverText: 
-  onFirstInteract:
+  customTouchDistance: -1
+  heldText: 
+  restrictSecondaryToHeldOnly: 0
+  customHoldDistance: -1
+  eventRelay: {fileID: 0}
+  onPrimaryInteractBackground:
     m_PersistentCalls:
       m_Calls: []
-  eventRelay: {fileID: 0}
+  onPrimaryInteractLiftBackground:
+    m_PersistentCalls:
+      m_Calls: []
+  onSecondaryInteractBackground:
+    m_PersistentCalls:
+      m_Calls: []
+  onSecondaryInteractLiftBackground:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverEnterBackground:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExitBackground:
+    m_PersistentCalls:
+      m_Calls: []
   onDrop:
     m_PersistentCalls:
       m_Calls: []
   attachPoint: {fileID: 0}
-  throwForce: 0
+  throwForceFactor: 0
+  maxThrowHoldTime: 2
   noCollideOnHold: 1
   groundPlace: 0
   dropOnKeyLift: 0
   groundPlaceOffset: {x: 0, y: 0, z: 0}
   freezeRotation: 0
-  snapSpeed: 20
   startingPosition: {x: 0, y: 0, z: 0}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
   myRbody: {fileID: 0}
@@ -194,7 +209,7 @@ CharacterController:
   m_Height: 1
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.01
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
