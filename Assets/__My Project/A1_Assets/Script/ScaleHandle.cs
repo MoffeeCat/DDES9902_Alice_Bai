@@ -276,8 +276,11 @@ public class ScaleHandle : MonoBehaviour
                 t
             );
 
-        Vector3 newScale =
-            startObjectScale;
+    // IMPORTANT:
+    // Start from the object's CURRENT scale,
+    // so other handles' changes are preserved.
+    Vector3 newScale =
+        targetObject.localScale;
 
         if (scaleX)
         {
